@@ -1,7 +1,24 @@
 /** @type {import('next').NextConfig} */
+const apiHost = process.env.IMAGE_HOSTNAME || 'localhost';
+const mediaHost = process.env.IMAGE_MEDIA_HOSTNAME
+  || (apiHost.endsWith('.strapiapp.com')
+      ? apiHost.replace('.strapiapp.com', '.media.strapiapp.com')
+      : apiHost);
+
 const nextConfig = {
   images: {
-    remotePatterns: [{ hostname: process.env.IMAGE_HOSTNAME || "localhost" }],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: apiHost,
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: mediaHost,
+        pathname: '/**',
+      },
+    ],
   },
   pageExtensions: ["ts", "tsx"],
   async redirects() {
