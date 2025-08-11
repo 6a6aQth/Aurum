@@ -3,11 +3,9 @@ import React from "react";
 export const MetaIcon = ({ className }: { className?: string }) => {
   return (
     <img
-      src={"/fortinet firewall logo.svg"}
-      alt="Fortinet logo"
-      className={["w-full h-full object-contain", className]
-        .filter(Boolean)
-        .join(" ")}
+      src="/fortinet firewall logo.svg"
+      alt="Fortinet"
+      className={className}
     />
   );
 };
@@ -15,9 +13,9 @@ export const MetaIcon = ({ className }: { className?: string }) => {
 export const LinkedInIcon = () => {
   return (
     <img
-      src={"/palo alto firewall logo.svg"}
-      alt="Palo Alto Networks logo"
-      className="w-full h-full object-contain"
+      src="/palo alto firewall logo.svg"
+      alt="Palo Alto Networks"
+      className="w-full h-full"
     />
   );
 };
@@ -25,9 +23,9 @@ export const LinkedInIcon = () => {
 export const SlackIcon = () => {
   return (
     <img
-      src={"/sophos firewall logo.svg"}
-      alt="Sophos logo"
-      className="w-full h-full object-contain"
+      src="/cisco firewall logo.svg"
+      alt="Cisco"
+      className="w-full h-full"
     />
   );
 };
@@ -35,9 +33,9 @@ export const SlackIcon = () => {
 export const InstagramIcon = () => {
   return (
     <img
-      src={"/cisco firewall logo.svg"}
-      alt="Cisco logo"
-      className="w-full h-full object-contain"
+      src="/sophos firewall logo.svg"
+      alt="Sophos"
+      className="w-full h-full"
     />
   );
 };
@@ -45,9 +43,9 @@ export const InstagramIcon = () => {
 export const TiktokIcon = () => {
   return (
     <img
-      src={"/fortinet firewall logo.svg"}
-      alt="Fortinet logo"
-      className="w-full h-full object-contain"
+      src="/safeline palo firewall logo.svg"
+      alt="Safeline Palo"
+      className="h-full w-full"
     />
   );
 };
@@ -55,9 +53,9 @@ export const TiktokIcon = () => {
 export const TwitterIcon = () => {
   return (
     <img
-      src={"/palo alto firewall logo.svg"}
-      alt="Palo Alto Networks logo"
-      className="w-full h-full object-contain"
+      src="/palo alto firewall logo.svg"
+      alt="Palo Alto Networks"
+      className="h-full w-full"
     />
   );
 };
@@ -65,9 +63,9 @@ export const TwitterIcon = () => {
 export const FacebookIcon = () => {
   return (
     <img
-      src={"/safeline palo firewall logo.svg"}
-      alt="Safeline Palo logo"
-      className="w-full h-full object-contain"
+      src="/fortinet firewall logo.svg"
+      alt="Fortinet"
+      className="h-full w-full"
     />
   );
 };
